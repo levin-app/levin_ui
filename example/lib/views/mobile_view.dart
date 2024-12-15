@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:neubrutalism_ui/neubrutalism_ui.dart';
+import 'package:levin_ui/levin_ui.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class MobileView extends StatelessWidget {
@@ -48,7 +48,7 @@ class LinkButtons extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
       children: [
-        NeuTextButton(
+        LevinTextButton(
           onPressed: () {},
           borderRadius: BorderRadius.circular(20),
           buttonHeight: MediaQuery.sizeOf(context).height * 0.1,
@@ -64,7 +64,7 @@ class LinkButtons extends StatelessWidget {
             )),
           ),
         ),
-        NeuTextButton(
+        LevinTextButton(
           onPressed: () {},
           borderRadius: BorderRadius.circular(20),
           buttonHeight: MediaQuery.sizeOf(context).height * 0.1,
@@ -102,7 +102,7 @@ class MainView extends StatelessWidget {
       padding: const EdgeInsets.all(20.0),
       child: Transform.rotate(
         angle: angle,
-        child: NeuTextButton(
+        child: LevinTextButton(
           buttonHeight: MediaQuery.sizeOf(context).height * 0.1,
           buttonWidth: MediaQuery.sizeOf(context).width * 0.5,
           borderWidth: 1,

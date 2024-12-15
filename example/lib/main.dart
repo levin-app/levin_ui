@@ -4,11 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
 
 void main() {
-  runApp(const NeuLandingSite());
+  runApp(const LevinLandingSite());
 }
 
-class NeuLandingSite extends StatelessWidget {
-  const NeuLandingSite({Key? key}) : super(key: key);
+class LevinLandingSite extends StatelessWidget {
+  const LevinLandingSite({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -32,7 +32,6 @@ class SiteContent extends StatelessWidget {
   }
 }
 
-
 class TabletView extends StatelessWidget {
   const TabletView({Key? key}) : super(key: key);
 
@@ -46,7 +45,7 @@ class TabletView extends StatelessWidget {
             fontSize: 100,
             fontWeight: FontWeight.bold,
           ),
-          text: 'NeuBrutalism',
+          text: 'LevinBrutalism',
           gradient: LinearGradient(colors: [
             Color.fromARGB(255, 229, 115, 147),
             Color.fromARGB(255, 51, 162, 31),
@@ -70,7 +69,7 @@ class DesktopView extends StatelessWidget {
             fontSize: 180,
             fontWeight: FontWeight.bold,
           ),
-          text: 'NeuBrutalism',
+          text: 'LevinBrutalism',
           gradient: LinearGradient(colors: [
             Colors.red[300]!,
             Colors.purple.shade700,

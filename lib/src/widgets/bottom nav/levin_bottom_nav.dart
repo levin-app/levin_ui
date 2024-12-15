@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 
-import '../../../neubrutalism_ui.dart';
+import '../../../levin_ui.dart';
 
-class NeuBottomNav extends StatefulWidget {
+class LevinBottomNav extends StatefulWidget {
   final List<IconData> icons;
   final Function onIconTap;
   final bool isFloating;
@@ -18,7 +18,7 @@ class NeuBottomNav extends StatefulWidget {
   final ScrollController scrollController;
   final int? autoHideDuration;
 
-  const NeuBottomNav({
+  const LevinBottomNav({
     Key? key,
     required this.icons,
     required this.initialIconColor,
@@ -37,10 +37,10 @@ class NeuBottomNav extends StatefulWidget {
   }) : super(key: key);
 
   @override
-  State<NeuBottomNav> createState() => _NeuBottomNavState();
+  State<LevinBottomNav> createState() => _LevinBottomNavState();
 }
 
-class _NeuBottomNavState extends State<NeuBottomNav> {
+class _LevinBottomNavState extends State<LevinBottomNav> {
   int _currentIndex = 0;
   bool _isVisible = true;
 
@@ -79,7 +79,7 @@ class _NeuBottomNavState extends State<NeuBottomNav> {
           padding: widget.isFloating
               ? EdgeInsets.only(left: 14, right: 14, bottom: 25)
               : EdgeInsets.zero,
-          child: NeuContainer(
+          child: LevinContainer(
             height: widget.isFloating
                 ? MediaQuery.of(context).size.height / 11
                 : MediaQuery.of(context).size.height / 9,
