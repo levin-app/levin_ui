@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:levin_ui/levin_ui.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 class MobileView extends StatelessWidget {
   const MobileView({Key? key}) : super(key: key);
